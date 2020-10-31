@@ -112,6 +112,14 @@ class Setting(models.Model):
         on_delete=models.CASCADE,
         related_name="setting_user",
     )
+    health_status = models.TextField(
+        null=True,
+        blank=True,
+    )
+    accessibility = models.TextField(
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
