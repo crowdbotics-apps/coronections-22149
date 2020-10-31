@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('dating', '0002_profile_health_status'),
+        ("dating", "0002_profile_health_status"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='setting',
-            name='accessibility',
+            model_name="setting",
+            name="accessibility",
             field=models.TextField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='setting',
-            name='health_status',
+            model_name="setting",
+            name="health_status",
             field=models.TextField(blank=True, null=True),
         ),
     ]
