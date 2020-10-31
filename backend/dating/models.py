@@ -72,6 +72,10 @@ class Profile(models.Model):
         on_delete=models.CASCADE,
         related_name="profile_user",
     )
+    health_status = models.TextField(
+        null=True,
+        blank=True,
+    )
 
 
 class Dislike(models.Model):
