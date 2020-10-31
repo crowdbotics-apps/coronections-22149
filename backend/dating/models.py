@@ -76,6 +76,10 @@ class Profile(models.Model):
         null=True,
         blank=True,
     )
+    accesibility = models.TextField(
+        null=True,
+        blank=True,
+    )
 
 
 class Dislike(models.Model):
